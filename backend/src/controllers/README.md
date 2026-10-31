@@ -1,0 +1,1 @@
+Controllers only translate HTTP input/output. Business rules and transactions belong in `services/`; SQL is parameterized and run through the pool/transaction helpers. Route files compose these modules and apply validation, authentication, and role middleware.
