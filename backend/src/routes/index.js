@@ -1,0 +1,17 @@
+const express = require('express');
+const authRoutes = require('./authRoutes');
+const usersRoutes = require('./usersRoutes');
+const catalogRoutes = require('./catalogRoutes');
+const quotationRoutes = require('./quotationRoutes');
+const subscriptionRoutes = require('./subscriptionRoutes');
+const invoiceRoutes = require('./invoiceRoutes');
+const dashboardRoutes = require('./dashboardRoutes');
+const router = express.Router();
+router.use('/auth', authRoutes);
+router.use('/users', usersRoutes);
+router.use('/catalog', catalogRoutes);
+router.use('/quotations', quotationRoutes);
+router.use('/subscriptions', subscriptionRoutes);
+router.use('/invoices', invoiceRoutes);
+router.use('/dashboard', dashboardRoutes);
+module.exports = router;
